@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.happy.entity">
+
+    <class name="Users" table="users">
+        <id name="id" >
+            <!--由底层数据库来维护主键，程序中不能手动的给id赋值-->
+            <generator class="native"/>
+        </id>
+        <property name="name"/>
+        <property name="password"/>
+        <property name="telephone"/>
+        <property name="username"/>
+        <property name="isadmin"/>
+
+    </class>
+
+</hibernate-mapping
+>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.happy.entity">
+
+    <class name="House" table="house">
+        <id name="id" >
+            <!--由底层数据库来维护主键，程序中不能手动的给id赋值-->
+            <generator class="native"/>
+        </id>
+        <property name="title"/>
+        <property name="description"/>
+        <property name="price"/>
+        <property name="pubdate"/>
+        <property name="floorage" column="fioorage"/>
+        <property name="contact"/>
+        <property name="user_id"/>
+        <property name="type_id"/>
+        <property name="street_id" column="streeet_id"/>
+    </class>
+
+</hibernate-mapping
+>
